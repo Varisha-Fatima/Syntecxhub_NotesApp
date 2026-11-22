@@ -1,0 +1,187 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #101827;
+  color: #f1f5f9;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 60px 20px;
+}
+
+.container {
+  max-width: 750px;
+  margin: auto;
+  background: #1e293b;
+  padding: 40px;
+  border-radius: 18px;
+  border: 1px solid #334155;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  color: #c4b5fd;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.subtitle {
+  text-align: center;
+  color: #cbd5e1;
+  margin: 12px 0 35px;
+  font-size: 15px;
+}
+
+/* Input area */
+
+.input-area textarea {
+  width: 100%;
+  padding: 18px;
+  background: #f8fafc;
+  color: #172033;
+  border: 2px solid #a78bfa;
+  border-radius: 12px;
+  font-size: 16px;
+  line-height: 1.6;
+  resize: vertical;
+  outline: none;
+  font-family: inherit;
+}
+
+.input-area textarea::placeholder {
+  color: #64748b;
+}
+
+.input-area textarea:focus {
+  border-color: #c4b5fd;
+  box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.2);
+}
+
+/* Add and Update button */
+
+.input-area button {
+  width: 100%;
+  margin-top: 14px;
+  padding: 14px;
+  background: #8b5cf6;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.input-area button:hover {
+  background: #7c3aed;
+  transform: translateY(-2px);
+}
+
+/* Notes heading */
+
+h2 {
+  margin: 35px 0 20px;
+  color: #e2e8f0;
+  font-size: 23px;
+}
+
+/* Notes list */
+
+.notes-list {
+  display: grid;
+  gap: 18px;
+}
+
+.empty {
+  text-align: center;
+  color: #cbd5e1;
+  padding: 25px;
+}
+
+/* Individual note */
+
+.note-card {
+  background: #f1f5f9;
+  border-left: 5px solid #8b5cf6;
+  padding: 22px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.note-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.note-card p {
+  color: #172033;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.8;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+/* Action buttons */
+
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.actions button {
+  padding: 9px 20px;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.edit-btn {
+  background: #2563eb;
+}
+
+.edit-btn:hover {
+  background: #1d4ed8;
+}
+
+.delete-btn {
+  background: #dc2626;
+}
+
+.delete-btn:hover {
+  background: #b91c1c;
+}
+
+/* Mobile responsive */
+
+@media (max-width: 600px) {
+  .app {
+    padding: 25px 12px;
+  }
+
+  .container {
+    padding: 22px;
+  }
+
+  h1 {
+    font-size: 29px;
+  }
+
+  .actions button {
+    flex: 1;
+  }
+}
